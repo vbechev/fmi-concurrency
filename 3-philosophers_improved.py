@@ -29,7 +29,9 @@ class Philosopher(threading.Thread):
 
     def run(self):
         while True:
-            self.eat(); self.ponder(); self.refresh()
+            self.eat()
+            self.ponder()
+            self.refresh()
 
 
 for number in range(5):

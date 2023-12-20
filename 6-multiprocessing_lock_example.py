@@ -5,7 +5,7 @@ def worker(n, lock):
     # work
     lock.acquire()
     v = n.value
-    for x in range(0, 300000):
+    for x in range(0, 3000000):
         x += 2
     n.value = v + 1
     lock.release()

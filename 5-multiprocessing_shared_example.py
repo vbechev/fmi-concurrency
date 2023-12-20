@@ -4,7 +4,7 @@ from multiprocessing import Process, Value
 def worker(n):
     # work
     v = n.value
-    for x in range(0, 30000000):
+    for x in range(0, 3000000):
         x += 2
     n.value = v + 1
     # twerk poorly
